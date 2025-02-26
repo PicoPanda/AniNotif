@@ -33,9 +33,9 @@ def interactive():
         table.add_row("[q] Quit")
         console.print(table)
         
-        choice = click.prompt("Enter your choice", type=str)
+        choice = click.prompt("Enter your choice", type=str).lower()
         
-        if choice == 'q':
+        if choice == 'q' or choice == 'quit':
             break
         elif choice == '1':
             db = Database()
@@ -62,12 +62,12 @@ def _handle_user_menu():
         table.add_row("[b] Back")
         console.print(table)
         
-        choice = click.prompt("Enter your choice", type=str)
+        choice = click.prompt("Enter your choice", type=str).lower()
         
-        if choice == 'b':
+        if choice == 'b' or choice == 'back':
             break
         elif choice == '1':
-            mal_user_id = click.prompt("Enter MAL user ID", type=str)
+            mal_user_id = click.prompt("Enter MAL user ID (your)", type=str)
             db = Database()
             if db.create_user(mal_user_id):
                 console.print("[green]User added successfully![/green]")
@@ -94,9 +94,9 @@ def _handle_anime_menu():
         table.add_row("[b] Back")
         console.print(table)
         
-        choice = click.prompt("Enter your choice", type=str)
+        choice = click.prompt("Enter your choice", type=str).lower()
         
-        if choice == 'b':
+        if choice == 'b' or choice == 'back':
             break
         elif choice == '1':
             mal_id = click.prompt("Enter MAL ID", type=int)
@@ -145,9 +145,9 @@ def _handle_watchlist_menu():
         table.add_row("[b] Back")
         console.print(table)
         
-        choice = click.prompt("Enter your choice", type=str)
+        choice = click.prompt("Enter your choice", type=str).lower()
         
-        if choice == 'b':
+        if choice == 'b' or choice == 'back':
             break
         elif choice == '1':
             user_id = click.prompt("Enter user ID", type=int)
@@ -172,9 +172,9 @@ def _handle_release_menu():
         table.add_row("[b] Back")
         console.print(table)
         
-        choice = click.prompt("Enter your choice", type=str)
+        choice = click.prompt("Enter your choice", type=str).lower()
         
-        if choice == 'b':
+        if choice == 'b' or choice == 'back':
             break
 
 # -------------------------

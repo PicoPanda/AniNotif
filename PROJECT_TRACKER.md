@@ -24,50 +24,56 @@
    - Created notification module for macOS
    - Implemented basic release notifications
 
-### 🚧 In Progress
-
-1. 🔄 **Database Operations**
-   - Need to implement more complex queries
-   - Add batch operations for efficiency
-   - Implement better error handling
-
-2. 🎨 **CLI Improvements**
-   - Add more detailed help messages
-   - Implement search functionality
-   - Add progress bars for long operations
-   - Improve data presentation
-
 ### 📝 Next Session Tasks
 
 1. 🎯 **Core Features**
+   - [ ] Complete the implementation of the MVP features
+     - [ ] CRUD on user
+     - [ ] CRUD on watch list
+     - [ ] CRUD on anime
    - [ ] Implement anime search by name
-   - [ ] Add bulk import/export functionality
+   - [ ] Add bulk import/export functionality (from mal csv file)
    - [ ] Implement periodic release checking
    - [ ] Add notification scheduling
 
-2. 🔧 **Improvements**
+2. 🔄 **Database Operations**
+   - [ ] Need to implement more complex queries
+   - [ ] Add batch operations for efficiency
+   - [ ] Implement better error handling
+
+3. 🎨 **CLI Improvements**
+   - [ ] Add more detailed help messages
+   - [ ] Implement search functionality
+   - [ ] Add progress bars for long operations
+   - [ ] Improve data presentation
+
+4. 🔧 **Improvements**
    - [ ] Add input validation
+   - [ ] Add watch list options {watching, plan to watch, dropped, re-watching}
+   - [ ] Ameliorate the CLI UI
    - [ ] Implement logging system
    - [ ] Add configuration file support
    - [ ] Improve error messages
+   - [ ] Improve console logging message
 
-3. 📊 **New Features**
-   - [ ] Add MAL authentication
-   - [ ] Implement watchlist sync with MAL
-   - [ ] Add statistics and reports
-   - [ ] Create simple web interface
-
-4. 🧪 **Testing**
+5. 🧪 **Testing**
    - [ ] Add unit tests
    - [ ] Implement integration tests
    - [ ] Add automated testing workflow
 
-### 💡 Future Ideas
+## 💡 Future Ideas
 
 1. 🌐 **Platform Expansion**
+   - Graphic user interface
    - Web application interface
    - Mobile app integration
    - Cross-platform notification support
+   - Auto-Sync with MAL
+   - MAL Authentication (with OAuth?)
+   - Track Manga too
+   - Other apps to track:
+     - Books
+     - Movies / Shows
 
 2. 🔄 **Integration**
    - Support for other anime databases
@@ -78,10 +84,3 @@
    - Watching statistics
    - Recommendation system
    - Seasonal anime tracking
-
-## 📌 Notes
-
-- Consider implementing a config file for user preferences
-- Look into alternative notification systems for cross-platform support
-- Research MAL API authentication requirements
-- Consider adding support for manga tracking in the future 
